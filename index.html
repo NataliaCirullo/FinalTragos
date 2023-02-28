@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+
   <title>Tragos</title>
   <!-- CSS Includes-->
   <link href="/css/main.css" rel="stylesheet">
@@ -11,449 +11,349 @@
 
 <body class="homepage">
 
-  <style>
+<style>
     img {
       max-width: 100%;
       height: auto;
     }
   </style>
 
-  <header id="header">
-    <nav class="navbar navbar-inverse" role="banner">
-      <div class="container">
-        <div class="collapse navbar-collapse navbar-right">
-             <a href="https://Tragos.nataliacirullo.repl.co/index.html">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;"> Recargar </font>
-                </font>
-              </a>
-         </div>
+<header id="header">
+  <nav class="navbar navbar-inverse" role="banner">
+    <div class="container">
+      <div class="collapse navbar-collapse navbar-right">
+        <a href="https://Tragos.nataliacirullo.repl.co/index.html">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;"> Recargar </font>
+          </font>
+        </a>
       </div>
-      <!--/.container-->
-    </nav>
-    <!--/nav-->
-  </header>
-  <!--/header-->
-  <div class="container"></div>
+    </div>
+    <!--/.container-->
+  </nav>
+  <!--/nav-->
+</header>
+<!--/header-->
+<div class="container"></div>
 
-  <section id="feature">
+<section id="feature">
 
+  <div class="container">
+    <div class="center">
+      <img src="/images/separator.jpg" style="width: 100%; object-fit: contain">
+      <br>
+      <h3>
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;"> Busca con tu ingrediente favorito </font>
+        </font>
+      </h3>
+      <table width="350" align="center">
+        <tbody>
+        <tr>
+          <td>
+            <select id="myIngredient" class="but-sel"></select>
+            <a href="browsePorIngrediente.html">
+              <button type="submit" class="but-sel" id="btnMostrar"> Buscar</button>
+            </a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <img src="/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
+    </div>
     <div class="container">
       <div class="center">
-        <img src="/images/separator.jpg" style="width: 100%; object-fit: contain">
-        <br>
         <h3>
           <font style="vertical-align: inherit;">
-            <font style="vertical-align: inherit;"> Busca con tu ingrediente favorito </font>
+            <font style="vertical-align: inherit;">Bebidas Populares</font>
           </font>
         </h3>
-        <table width="350" align="center">
-          <tbody>
-            <tr>
-              <td>
-                <select id="myIngredient" class="but-sel"></select>
-                <a href="browsePorIngrediente.html">
-                  <button type="submit" class="but-sel" id="btnMostrar"> Buscar</button>
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <img src="/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
-      </div>
-      <div class="container">
-        <div class="center">
-          <h3>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">Bebidas Populares</font>
-            </font>
-          </h3>
-          <div class="row">
-            <div class="col-sm-3">
-              <a href="browsePorIngrediente.html">
-                <div>
-                  <img src="https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg" idth="95%">
-                </div>
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Mojitos</font>
-                </font>
-              </a>
-              <br>
-              <br>
-            </div>
-            <div class="col-sm-3">
-              <a href="https://www.thecocktaildb.com/drink/11001-Old-Fashioned-Cocktail">
-                <div>
-                  <img src="https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg" width="95%">
-                </div>
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Anticuado</font>
-                </font>
-              </a>
-              <br>
-              <br>
-            </div>
-            <div class="col-sm-3"><a href="https://www.thecocktaildb.com/drink/11002-Long-Island-Tea-Cocktail">
-                <div>
-                  <img src="https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg" width="95%">
-                </div>
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Té de isla larga</font>
-                </font>
-              </a>
-              <br>
-              <br>
-            </div>
-            <div class="col-sm-3">
-              <a href="https://www.thecocktaildb.com/drink/11003-Negroni-Cocktail">
-                <div>
-                  <img src="https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg" width="95%">
-                </div>
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Negroni</font>
-                </font>
-              </a>
-              <br>
-              <br>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-3">
-              <a href="https://www.thecocktaildb.com/drink/11004-Whiskey-Sour-Cocktail">
-                <div>
-                  <img src="https://www.thecocktaildb.com/images/media/drink/hbkfsh1589574990.jpg" width="95%">
-                </div>
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">whisky agrio</font>
-                </font>
-              </a>
-              <br>
-              <br>
-            </div>
-            <div class="col-sm-3">
-              <a href="https://www.thecocktaildb.com/drink/11005-Dry-Martini-Cocktail">
-                <div>
-                  <img src="https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg" width="95%">
-                </div>
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Martini seco</font>
-                </font>
-              </a>
-              <br>
-              <br>
-            </div>
-            <div class="col-sm-3"><a href="https://www.thecocktaildb.com/drink/11006-Daiquiri-Cocktail">
-                <div>
-                  <img src="https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg" width="95%">
-                </div>
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">daiquirí</font>
-                </font>
-              </a>
-              <br>
-              <br>
-            </div>
-            <div class="col-sm-3">
-              <a href="https://www.thecocktaildb.com/drink/11007-Margarita-Cocktail">
-                <div>
-                  <img src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg" width="95%">
-                </div>
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Margarita</font>
-                </font>
-              </a>
-              <br>
-              <br>
-            </div>
-          </div>
-          <br><br>
-          <img src="https://www.thecocktaildb.com/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
-
-          <h3>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">Ingredientes Populares</font>
-            </font>
-          </h3>
-          <div class="row">
-            <div class="col-sm-3">
-              <a href="browsePorIngrediente.html?ingrediente=vodka">
-                <figure>
-                  <img src="/images/Vodka.png" width="95%">
-                  <figcaption>
-                    <br>
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Vodka</font>
-                    </font>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="col-sm-3">
-              <a href="browsePorIngrediente.html?ingrediente=Gin">
-                <figure>
-                  <img src="/images/Gin.png" width="95%">
-                  <figcaption>
-                    <br>
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Ginebra</font>
-                    </font>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="col-sm-3">
-              <a href="browsePorIngrediente.html?ingrediente=Ron">
-                <figure>
-                  <img src="/images/Rum.png" width="95%">
-                  <figcaption>
-                    <br>
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Ron</font>
-                    </font>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="col-sm-3">
-              <a href="browsePorIngrediente.html?ingrediente=Tequila">
-                <figure>
-                  <img src="/images/Tequila.png" width="95%">
-                  <figcaption>
-                    <br>
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Tequila</font>
-                    </font>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-          </div>
-          <br>
-          <img src="/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
-          <br><br>
-          <h3>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">Navegar por nombre</font>
-            </font>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="browsePorIngrediente.html">
+              <div>
+                <img src="https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg" idth="95%">
+              </div>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Mojitos</font>
+              </font>
+            </a>
             <br>
-          </h3>
-          <h2>
-            <a href="/browsePorInicial.html?b=a">
+            <br>
+          </div>
+          <div class="col-sm-3">
+            <a href="https://www.thecocktaildb.com/drink/11001-Old-Fashioned-Cocktail">
+              <div>
+                <img src="https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg" width="95%">
+              </div>
               <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">A</font>
+                <font style="vertical-align: inherit;">Anticuado</font>
               </font>
             </a>
+            <br>
+            <br>
+          </div>
+          <div class="col-sm-3"><a href="https://www.thecocktaildb.com/drink/11002-Long-Island-Tea-Cocktail">
+            <div>
+              <img src="https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg" width="95%">
+            </div>
             <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
+              <font style="vertical-align: inherit;">Té de isla larga</font>
             </font>
-            <a href="/browsePorInicial.html?b=b">
+          </a>
+            <br>
+            <br>
+          </div>
+          <div class="col-sm-3">
+            <a href="https://www.thecocktaildb.com/drink/11003-Negroni-Cocktail">
+              <div>
+                <img src="https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg" width="95%">
+              </div>
               <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">B</font>
+                <font style="vertical-align: inherit;">Negroni</font>
               </font>
             </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=c">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">C</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=d">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">D</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=e">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">E</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=f">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">F</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=g">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">G</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=h">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">H</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=i">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">I</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=j">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">J</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=k">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">K</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=l">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">L</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=m">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">M</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=n">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">N</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=o">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">O</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=p">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">P</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=q">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">Q</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=r">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">R</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=s">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">S</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=t">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">T</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=u">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">U</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=v">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">V</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=w">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">W</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=x">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">X</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font>
-            <a href="/browsePorInicial.html?b=y">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">Y</font>
-              </font>
-            </a>
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;"> / </font>
-            </font><a href="/browsePorInicial.html?b=z">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">Z</font>
-              </font>
-            </a>
-          </h2>
+            <br>
+            <br>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="https://www.thecocktaildb.com/drink/11004-Whiskey-Sour-Cocktail">
+              <div>
+                <img src="https://www.thecocktaildb.com/images/media/drink/hbkfsh1589574990.jpg" width="95%">
+              </div>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">whisky agrio</font>
+              </font>
+            </a>
+            <br>
+            <br>
+          </div>
+          <div class="col-sm-3">
+            <a href="https://www.thecocktaildb.com/drink/11005-Dry-Martini-Cocktail">
+              <div>
+                <img src="https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg" width="95%">
+              </div>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Martini seco</font>
+              </font>
+            </a>
+            <br>
+            <br>
+          </div>
+          <div class="col-sm-3"><a href="https://www.thecocktaildb.com/drink/11006-Daiquiri-Cocktail">
+            <div>
+              <img src="https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg" width="95%">
+            </div>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">daiquirí</font>
+            </font>
+          </a>
+            <br>
+            <br>
+          </div>
+          <div class="col-sm-3">
+            <a href="https://www.thecocktaildb.com/drink/11007-Margarita-Cocktail">
+              <div>
+                <img src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg" width="95%">
+              </div>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Margarita</font>
+              </font>
+            </a>
+            <br>
+            <br>
+          </div>
+        </div>
+        <br><br>
+        <img src="https://www.thecocktaildb.com/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
+
+        <h3>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Ingredientes Populares</font>
+          </font>
+        </h3>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="browsePorIngrediente.html?ingrediente=vodka">
+              <figure>
+                <img src="/images/Vodka.png" width="95%">
+                <figcaption>
+                  <br>
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Vodka</font>
+                  </font>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="browsePorIngrediente.html?ingrediente=Gin">
+              <figure>
+                <img src="/images/Gin.png" width="95%">
+                <figcaption>
+                  <br>
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Ginebra</font>
+                  </font>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="browsePorIngrediente.html?ingrediente=Ron">
+              <figure>
+                <img src="/images/Rum.png" width="95%">
+                <figcaption>
+                  <br>
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Ron</font>
+                  </font>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="browsePorIngrediente.html?ingrediente=Tequila">
+              <figure>
+                <img src="/images/Tequila.png" width="95%">
+                <figcaption>
+                  <br>
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Tequila</font>
+                  </font>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <br>
+        <img src="/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
+        <br><br>
+        <h3>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Navegar por nombre</font>
+          </font>
+          <br>
+        </h3>
+        <h2>
+          <a href="/browsePorInicial.html?b=a">
+            <font style="vertical-align: inherit;">A</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=b">
+            <font style="vertical-align: inherit;">B</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=c">
+            <font style="vertical-align: inherit;">C</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=d">
+            <font style="vertical-align: inherit;">D</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=e">
+            <font style="vertical-align: inherit;">E</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=f">
+            <font style="vertical-align: inherit;">F</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=g">
+            <font style="vertical-align: inherit;">G</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=h">
+            <font style="vertical-align: inherit;">H</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=i">
+            <font style="vertical-align: inherit;">I</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=j">
+            <font style="vertical-align: inherit;">J</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=k">
+            <font style="vertical-align: inherit;">K</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=l">
+            <font style="vertical-align: inherit;">L</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=m">
+            <font style="vertical-align: inherit;">M</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=n">
+            <font style="vertical-align: inherit;">N</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=o">
+            <font style="vertical-align: inherit;">O</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=p">
+            <font style="vertical-align: inherit;">P</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=q">
+            <font style="vertical-align: inherit;">Q</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=r">
+            <font style="vertical-align: inherit;">R</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=s">
+            <font style="vertical-align: inherit;">S</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=t">
+            <font style="vertical-align: inherit;">T</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=u">
+            <font style="vertical-align: inherit;">U</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=v">
+            <font style="vertical-align: inherit;">V</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+
+          <a href="/browsePorInicial.html?b=w">
+            <font style="vertical-align: inherit;">W</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=x">
+            <font style="vertical-align: inherit;">X</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=y">
+            <font style="vertical-align: inherit;">Y</font>
+          </a>
+          <font style="vertical-align: inherit;"> / </font>
+          <a href="/browsePorInicial.html?b=z">
+            <font style="vertical-align: inherit;">Z</font>
+          </a>
+        </h2>
       </div>
-      <!--/.container-->
     </div>
-  </section>
-  <!--/#feature-->
+    <!--/.container-->
+  </div>
+</section>
+<!--/#feature-->
 
 
-  </footer>
+</footer>
 
-  <script type="text/javascript">
+<script type="text/javascript">
     const $select = document.querySelector("#myIngredient");
     
     const fetchIngredients = async () => {
@@ -464,6 +364,7 @@
     
     const populateSelect = async () => {
       const ingredients = await fetchIngredients();
+      ingredients.sort((a, b) => a.strIngredient1.localeCompare(b.strIngredient1));
       ingredients.forEach(ingredient => {
         const $option = document.createElement("option");
         $option.value = ingredient.strIngredient1;
