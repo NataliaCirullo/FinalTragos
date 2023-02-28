@@ -1,7 +1,9 @@
 jQuery(function($) {
   'use strict',
 
-    //#main-slider
+    /**Utiliza el plugin "carousel"
+    para crear un carrusel de imágenes y
+     establece un intervalo de 8 segundos para cambiar de imagen.***/
     $(function() {
       $('#main-slider.carousel').carousel({
         interval: 8000
@@ -9,7 +11,10 @@ jQuery(function($) {
     });
 
 
-  // accordian
+  /**Hace referencia a un acordeón en la página,
+  donde cada elemento del acordeón tiene un botón para desplegar o contraer el contenido.
+  Cuando se hace clic en uno de estos botones,
+   se agrega o se quita la clase "active" a la sección correspondiente del acordeón.***/
   $('.accordion-toggle').on('click', function() {
     $(this).closest('.panel-group').children().each(function() {
       $(this).find('>.panel-heading').removeClass('active');
@@ -21,7 +26,8 @@ jQuery(function($) {
   //Initiat WOW JS
   new WOW().init();
 
-  // portfolio filter
+  /***Utiliza el plugin "isotope" para filtrar
+  y ordenar los elementos de la sección de portafolio***/
   $(window).load(function() {
     'use strict';
     var $portfolio_selectors = $('.portfolio-filter >li>a');
@@ -40,7 +46,10 @@ jQuery(function($) {
     });
   });
 
-  // Contact form
+  /***Cuando se envía el formulario,
+  se muestra un mensaje de carga,
+  y luego se muestra un mensaje de éxito o error según la respuesta del servidor.
+***/
   var form = $('#main-contact-form');
   form.submit(function(event) {
     event.preventDefault();
@@ -57,7 +66,8 @@ jQuery(function($) {
   });
 
 
-  //goto top
+  /***botón "Volver arriba" ,
+  se hace scroll hasta la parte superior de la página.**/
   $('.gototop').click(function(event) {
     event.preventDefault();
     $('html, body').animate({
@@ -65,7 +75,7 @@ jQuery(function($) {
     }, 500);
   });
 
-  //Pretty Photo
+  /* mostrar imágenes en una ventana emergente al hacer clic en ellas**/
   $("a[rel^='prettyPhoto']").prettyPhoto({
     social_tools: false
   });
