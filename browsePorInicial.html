@@ -1,0 +1,96 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tragos</title>
+  <!-- CSS Includes-->
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="homepage">
+
+<style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+
+<header id="header">
+  <nav class="navbar navbar-inverse" role="banner">
+    <div class="container">
+      <div class="collapse navbar-collapse navbar-right">
+        <ul>
+          <li class="active">
+            <a href="https://Tragos.nataliacirullo.repl.co">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;"> Inicio </font>
+              </font>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--/.container-->
+  </nav>
+  <!--/nav-->
+</header>
+<!--/header-->
+<section id="feature">
+  <div class="container">
+    <div class="center">
+      <h1> Cócteles con <span id="nombre"> </span><br><br></h1>
+      <div class='row' id="contenido">
+        <!--/.contenido con js-->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script type="text/javascript">
+  const urlParams = new URLSearchParams(window.location.search);
+  const inicial = urlParams.get('b');
+  const nombreElement = document.getElementById('nombre');
+  const contenidoElement = document.querySelector('#contenido');
+  
+  const fetchTragos = async (letra) => {
+    const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${letra}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    return data.drinks;
+  };
+  
+  const renderTragos = (tragos) => {
+    let html = '';
+    tragos.forEach(trago => {
+      html += `
+        <div class='col-sm-3'> 
+          <a href='/trago.html?n=${trago.idDrink}'>
+            <img src=${trago.strDrinkThumb} width='200'>
+            <br>
+            ${trago.strDrink}
+          </a>
+        </div>
+      `;
+    });
+    contenidoElement.innerHTML = html;
+  };
+  
+  const jsonTragos = async () => {
+    const tragos = await fetchTragos(inicial);
+    renderTragos(tragos);
+    nombreElement.innerHTML = inicial;
+  };
+  
+  window.addEventListener("load", function () {
+    jsonTragos();
+  });
+  
+</script>
+
+</body>
+
+</html>
